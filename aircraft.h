@@ -14,10 +14,11 @@ public:
     double speed;
     double heading_deg;
     double verticalSpeed_fpm;
-    std::string holdFix;  // Assigned holding fix (BNN, OCK, etc.)
+    std::string holdFix;
     std::string assignedRunway;
-    double distanceToRunway;  // Updated dynamically
+    double distanceToRunway;
     WakeCategory wakeCategory;
+    std::string lastAdvisory;  // NEW: Stores last advisory text
 
     Aircraft(const std::string& callsign, double lat, double lon, double alt, double spd, double hdg, double vs, WakeCategory wake);
 
