@@ -1,0 +1,103 @@
+HEATHROW ATC TRAFFIC FLOW & ARRIVAL SIMULATOR
+│
+├── 00 — MASTER PROJECT / ARCHITECTURE
+│     Overall design
+│     Development roadmap
+│     Class/module boundaries
+│     CMake / Qt Creator
+│     Decisions that affect multiple systems
+│
+├── 01 — AIRCRAFT SIMULATION
+│     AircraftState
+│     CommandedAircraftState
+│     Heading/track
+│     Turn rates
+│     Speed acceleration/deceleration
+│     Climb/descent
+│     Wind
+│     Fixed-dt simulation
+│
+├── 02 — GEOGRAPHY & HEATHROW AIRSPACE
+│     Lat/lon geometry
+│     Bearings/distances
+│     Heathrow runways
+│     OCK / BIG / LAM / BNN
+│     Coordinate projection
+│     Approach geometry
+│
+├── 03 — RADAR DISPLAY
+│     QWidget + QPainter
+│     Targets
+│     Data blocks
+│     Leader lines
+│     History trails
+│     Vectors
+│     Selection
+│     Zoom/pan
+│     Advisory graphics
+│
+├── 04 — HOLDING & ARRIVAL ROUTING
+│     Stack entry
+│     Holding patterns
+│     Levels
+│     Stack release
+│     Downwind
+│     Base
+│     Final intercept
+│
+├── 05 — ARRIVAL SEQUENCING / AMAN
+│     Arrival order
+│     ETA
+│     Target landing time
+│     Delay absorption
+│     Runway allocation
+│     Arrival-rate calculations
+│
+├── 06 — SEPARATION / TBS / PAIRWISE
+│     Wake categories
+│     Leader/follower relationships
+│     Distance separation
+│     Time-Based Separation
+│     Pairwise separation
+│     Headwind effects
+│
+├── 07 — ATC CONTROL & ADVISORIES
+│     Heading instructions
+│     Speed instructions
+│     Altitude instructions
+│     Turn-downwind advisory
+│     Turn-base advisory
+│     Final intercept
+│     Spacing/conflict advisories
+│
+├── 08 — LIVE ADS-B & REPLAY
+│     Live feed
+│     Recorded traffic
+│     NormalisedAircraftState
+│     7-second updates
+│     Kalman filtering
+│     Prediction/interpolation
+│
+├── 09 — SCENARIOS / GAME MODE
+│     Traffic generation
+│     Difficulty
+│     Controller interaction
+│     Scoring
+│     Separation infringements
+│     Go-arounds
+│     Emergencies/events
+│
+├── 10 — TESTING & VALIDATION
+│     Unit tests
+│     Geometry tests
+│     Simulation tests
+│     Deterministic replay
+│     Separation tests
+│     Performance
+│
+└── 11 — REAL ATC RESEARCH
+      Heathrow procedures
+      NATS terminology
+      Phraseology
+      Operational observations
+      Papers/documentation
