@@ -101,3 +101,34 @@ HEATHROW ATC TRAFFIC FLOW & ARRIVAL SIMULATOR
       Phraseology
       Operational observations
       Papers/documentation
+	  
+	  
+	
+////////////////////////////
+
+
+Domain/
+    Aircraft
+    FlightPlan
+    Runway
+    ArrivalSequence
+    Separation
+
+Algorithms/
+    Sequencer
+    ConflictDetector
+    VectorPlanner
+    TrajectoryPredictor
+
+Simulation/
+    SimulationClock
+    TrafficGenerator
+    AircraftMotion
+
+UI/
+    RadarWidget
+    AircraftModel
+    SequencePanel
+    ControllerPanel
+
+Tests/
